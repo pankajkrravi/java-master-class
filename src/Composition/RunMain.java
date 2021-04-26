@@ -14,8 +14,9 @@ public class RunMain {
         Motherboard motherboard= new Motherboard("Bj-300","Asus",4,6,"v2.11");
 
         PC pc=new PC(aCase,monotor,motherboard);
-        pc.getMonotor().drawPixelAt(0,2000,"Red");
+        /*pc.getMonotor().drawPixelAt(0,2000,"Red");
         pc.getMotherboard().loadProgram("Linux 1.1");
-        pc.getaCase().pressPowerButton();
+        pc.getaCase().pressPowerButton();*/
+        pc.powerUp();
     }
 }

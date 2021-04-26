@@ -15,15 +15,13 @@ public class PC {
         this.motherboard = motherboard;
     }
 
-    public Case getaCase() {
-        return aCase;
-    }
 
-    public Monotor getMonotor() {
-        return monotor;
+    //================= powerUp() ===============
+    public void powerUp(){
+        aCase.pressPowerButton();
+        drawLogo();
     }
-
-    public Motherboard getMotherboard() {
-        return motherboard;
+    public void drawLogo(){
+        monotor.drawPixelAt(1200,50,"Yellow");
     }
 }
